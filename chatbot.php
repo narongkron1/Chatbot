@@ -1,5 +1,5 @@
 <?php
-echo('TEST CHAT BOT');
+// echo('TEST CHAT BOT');
  $LINEData = file_get_contents('php://input');
  $jsonData = json_decode($LINEData,true);
  $replyToken = $jsonData["events"][0]["replyToken"];
@@ -17,7 +17,7 @@ echo('TEST CHAT BOT');
  
  if ($mysql->connect_error){
  $errorcode = $mysql->connect_error;
- print("MySQL(Connection)> ".$errorcode);
+ print("MySQL(Connection)>".$errorcode);
  }
  //ตัวเชื่อมต่อกับ mysql
 
